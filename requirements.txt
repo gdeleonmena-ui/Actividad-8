@@ -1,0 +1,6 @@
+# Simulacion: dependencias estandar de Python 3.10+.
+# Visualizacion y pruebas:
+matplotlib>=3.7,<4
+pytest>=8,<10
+# Opcional: registro de artefactos en MLflow desde scripts/log_to_mlflow.py
+# mlflow>=3,<5

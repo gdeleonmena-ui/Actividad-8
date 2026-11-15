@@ -1,0 +1,28 @@
+[
+  {
+    "id": "INC-001",
+    "type": "latency",
+    "detected_at": "2026-11-15T12:25:00+00:00",
+    "detected_window": 5,
+    "observed_p95_ms": 779.2,
+    "action": "simulate_revert_of_latency_configuration",
+    "status": "resolved_simulated",
+    "severity": "P1",
+    "resolved_at": "2026-11-15T12:30:00+00:00",
+    "resolved_window": 6,
+    "recovered_p95_ms": 142.4
+  },
+  {
+    "id": "INC-002",
+    "type": "data_drift",
+    "detected_at": "2026-11-15T13:00:00+00:00",
+    "detected_window": 12,
+    "observed_psi": 0.752,
+    "action": "manual_review_and_retrain_ticket_only",
+    "status": "resolved_simulated",
+    "severity": "P2",
+    "resolved_at": "2026-11-15T13:05:00+00:00",
+    "resolved_window": 13,
+    "recovered_psi": 0.0007
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "scenario": "simulacion_academica_retencion_retail",
+  "slo": {"availability": 0.99, "p95_latency_ms": 400, "window_requests": 100, "error_budget_period_requests": 1800},
+  "alerts": {
+    "latency": {"p95_ms": 400, "consecutive_windows": 2, "severity": "P1", "cooldown_windows": 3},
+    "data_drift": {"psi_threshold": 0.20, "consecutive_windows": 2, "severity": "P2", "cooldown_windows": 3},
+    "error_rate": {"threshold": 0.03, "severity": "P1", "cooldown_windows": 3}
+  },
+  "automation": {"rollback_mode": "simulated_configuration_revert", "drift_mode": "manual_review_and_retraining_ticket", "automatic_retraining": false},
+  "logging": {"fields": ["ts", "trace_id", "span_id", "incident_id", "severity", "event", "metric", "value", "action", "outcome"], "pii_allowed": false}
+}
